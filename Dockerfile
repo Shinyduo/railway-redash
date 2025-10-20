@@ -1,6 +1,5 @@
 # Simple Redash one-container image
-FROM redash/redash:10.1.0
-
+FROM redash/redash:10.1.0.b50633
 # Install supervisor to run web + worker + scheduler together
 USER root
 RUN apt-get update && apt-get install -y --no-install-recommends supervisor && rm -rf /var/lib/apt/lists/*
